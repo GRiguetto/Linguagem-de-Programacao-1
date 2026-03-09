@@ -20,11 +20,30 @@ public class validacoes {
         return true;
     }
 
-    public static boolean ValidarNota(nota){
+    public static boolean ValidarNota(double nota){
 
-        if(){
-            
+        if(nota < 0 || nota > 10){
+            return false;
         }
+        return true;
+    }
+
+    public static boolean ValidarPositivo(double valor){
+        if(valor <0){
+            return false;
+        }
+        return true;
+    }
+
+    public static boolean ValidarParImpar(double numero){
+        if(numero % 2 != 0){
+            return false;
+        }
+        return true;
+            
+        
+       
+        
     }
 
 }
